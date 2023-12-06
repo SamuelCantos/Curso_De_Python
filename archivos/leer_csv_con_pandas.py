@@ -1,8 +1,10 @@
 import pandas as pd
 
 #usando la funcion read_csv para leer el archivo CSV
-df = pd.read_csv("archivos\\datos.csv")
-df2 = pd.read_csv("archivos\\datos.csv")
+df = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
+print(df)
+
+df2 = pd.read_csv("Curso_De_Python\\archivos\\datos.csv")
 
 #obteniendo los datos de la columna nombre
 nombres = df["nombre"]
@@ -14,7 +16,7 @@ df_orden_ascendente = df.sort_values("edad")
 df_orden_descendente = df.sort_values("edad",ascending=False)
 
 #concatenando los 2 dataframes
-df_concatenado = pd.concat([df,df2])
+df_concatenado = pd.concat([df,df2])    
 
 #accediendo a la primeras 3 filas con head()
 primeras_filas = df.head(3)
@@ -22,8 +24,9 @@ primeras_filas = df.head(3)
 #accediendo a las últimas 3 filas con tail()
 ultimas_filas = df.tail(3)
 
-#accediendo a la cantidad de filas y columnas con shape
-filas_totales,columnas_totales = df.shape
+#accediendo a la cantidad de filas y columnas con shape. Desempaquetando
+
+filas_totales,columnas_totales = df.shape 
 
 #obteniendo data estadística del dataframe:
 df_info = df.describe()

@@ -25,11 +25,14 @@ def obtener_compañeros(cantidad_de_compañeros):
     
     #retornamos una tupla
     return asistente,profesor
-
 #desempaquetamos lo que nos retorna la funciòn
 asistente,profesor = obtener_compañeros(5)
 
 #mostrando el resultado
 print(f"El profesor es: {profesor} y su asistente es {asistente}")
+
+
+
+
     
     

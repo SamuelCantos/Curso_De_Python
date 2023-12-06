@@ -16,7 +16,7 @@ diferencia_con_promedio = 100 - dalto_curso / otros_cursos_promedio * 100
 
 #Calculando el porcentaje de tiempo vacìo removido
 tiempo_vacio_promedio =  100 - otros_cursos_promedio * 1000 // crudo_promedio / 10
-tiempo_vacio_dalto =  100 - dalto_curso * 1000 // crudo_dalto / 10
+tiempo_vacio_dalto =  100 - dalto_curso  / crudo_dalto * 100
 
 
 #Mostrando las diferencias de duraciòn (ejercicio A)
@@ -37,3 +37,4 @@ print("----------------")
 print(f'Ver 10 horas de este curso equivale a ver {otros_cursos_promedio * 100 // dalto_curso / 10} horas de otros cursos')
 print(f'Ver 10 horas de otros cursos equivale a ver {dalto_curso * 100 // otros_cursos_promedio / 10} horas de este curso')
 print("----------------")
+
